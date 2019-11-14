@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Manjunaths Page Title
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- 
+TO RUN IN BROWSER -> IN TERMINAL TYPE -> "ionic serve" (for browser style) , "ionic serve --l" (for mobile debug style)
+EVERY TIME WE SAVE PROJECT "CTRL + S", Browser is updated in realtime
+TO EXIT THE RUN IN BROWSER -> "CTRL + C"
+---
+TO RUN IN ANDORID EMULATOR/DEVICE -> IN TERMINAL TYPE -> "ionic cordova run android"
+and to update changes in realtime --. Type -> "ionic cordova run android --livereload"
+
+
+
+
+-->
+
+
+<ion-content>
+  <ion-button color="success" (click)="gotoOffice()">Go to Buttons1</ion-button>
+  
+  <ion-button href="buttons" routerDirection="root">Go to Buttons2</ion-button>
+  <ion-button (click)="actionsheet()" >Action SHeet</ion-button>
+  <!-- BUTTONS-->
+  <section>
+      <header>Small Size Buttons</header>
+      <ion-button size="small">Default</ion-button>
+      <ion-button size="small" color="secondary">Secondary Color</ion-button>
+      <ion-button size="small" color="tertiary">Tertiary color</ion-button>
+    </section>
+
+    <br>
+    <br>
+    <section>
+      <header>Default Size Buttons</header>
+      <ion-button color="success">Success Color</ion-button>
+      <ion-button color="warning">Warning Color</ion-button>
+      <ion-button color="danger">Danger Color</ion-button>
+    </section>
+
+    <section>
+      <header>Large Size Buttons</header>
+      <ion-button size="large" color="light">Light Color</ion-button>
+      <ion-button size="large" color="medium">Medium Color</ion-button>
+      <ion-button size="large" color="dark">Dark Color</ion-button>
+    </section>
+
+    <section>
+      <header>Block Width Button</header>
+      <ion-button expand="block">A block button</ion-button>
+    </section>
+
+    <section class="full-width">
+      <header>Full Width</header>
+      <ion-button expand="full" color="secondary">A full-width button</ion-button>
+    </section>
+
+</ion-content>
+
+
+
